@@ -1,4 +1,4 @@
-package model;
+package com.amazon.onlinemarket.model;
 
 import lombok.Getter;
 import lombok.Setter;

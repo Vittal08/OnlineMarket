@@ -1,22 +1,23 @@
-package Service;
+package com.amazon.onlinemarket.Service;
 
 
-import Dto.FakestoreDto;
-import model.Product;
+import com.amazon.onlinemarket.Dto.FakeStoreDto;
+import com.amazon.onlinemarket.model.Product;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 @Service
 public class Fakestore implements  ProductService {
-    private final RestTemplate rt;
+    private RestTemplate rt;
     public Fakestore(RestTemplate rt){
-        this.rt= rt ;
+        this.rt= rt;
     }
     @Override
     public Product getProductbyid(Integer id) {
-        ResponseEntity<FakestoreDto> response = rt.getForEntity("https://fakestoreapi.com/products/1"+ id,
-                FakestoreDto.class);
-        FakestoreDto convertedjson = response.getBody();
+        ResponseEntity<FakeStoreDto> response =
+                rt.getForEntity("https://fakestoreapi.com/products/"+ id,
+                FakeStoreDto.class);
+        FakeStoreDto convertedjson = response.getBody();
         return convertedjson.toProduct();
     }
 

@@ -1,6 +1,6 @@
-package Service;
+package com.amazon.onlinemarket.Service;
 
-import model.Product;
+import com.amazon.onlinemarket.model.Product;
 
 public interface ProductService {
 

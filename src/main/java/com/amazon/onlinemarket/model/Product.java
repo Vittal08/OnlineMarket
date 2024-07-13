@@ -1,4 +1,4 @@
-package model;
+package com.amazon.onlinemarket.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +12,6 @@ public class Product {
     private String imgurl;
     private  String price;
     private Category category;
-    
 }
 
 

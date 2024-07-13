@@ -1,8 +1,8 @@
-package Dto;
+package com.amazon.onlinemarket.Dto;
 
 import lombok.Getter;
 import lombok.Setter;
-import model.Category;
+import com.amazon.onlinemarket.model.Category;
 @Getter
 @Setter
 public class ProResDto {

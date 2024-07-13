@@ -1,13 +1,13 @@
-package Dto;
+package com.amazon.onlinemarket.Dto;
 
 import lombok.Getter;
 import lombok.Setter;
-import model.Category;
-import model.Product;
+import com.amazon.onlinemarket.model.Category;
+import com.amazon.onlinemarket.model.Product;
 
 @Getter
 @Setter
-public class FakestoreDto {
+public class FakeStoreDto {
     private Integer id ;
     private String price;
     private String title ;
